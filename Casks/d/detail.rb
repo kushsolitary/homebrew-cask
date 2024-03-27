@@ -8,11 +8,6 @@ cask "detail" do
   desc "Pro camera for video calls"
   homepage "https://detail.co/"
 
-  livecheck do
-    url "https://api.detail.co/v1/macOS/latest"
-    strategy :header_match
-  end
-
   auto_updates true
   depends_on macos: ">= :big_sur"
 
